@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;  
+}
+
+/* HEADER SECTION */
+
+header{
+    width: 100%;
+    height: 30px;
+    background-color: #e39f7d;
+    display: grid;
+    /* grid-template-columns: repeat(5,1fr); */
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#time{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 20px;
+    text-align: center;
+    padding: 3px;
+    padding-left: 6px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#name{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 20px;
+    text-align: left;
+    padding: 3px;
+    padding-left: 6px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Section */
+
+section::after{
+    position: absolute;
+    width: 100%;
+    height: 625px;
+    content: "";
+    z-index: -1;
+    background: url("background.jpg") no-repeat center center/cover;;
+    opacity: 0.9;
+}
+
+section{
+    width: 100%;
+    height: 625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    height: 500px;
+    width: 30%;
+    background-color: #6f6155ed;
+    border-radius: 15px;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+#card1 h5{
+    font-family: 'Rubik Beastly', cursive;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    border-bottom: 5px solid blanchedalmond;
+} 
+
+#card1 span{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 2px;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+}
+
+
+
+#card2 h5{
+    font-family: 'Rubik Beastly', cursive;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    border-bottom: 5px solid blanchedalmond;
+} 
+
+#outer{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card2 span{
+    display: block;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+}
+
+#matrix{
+    background-color: #c7cfb8;
+    display: grid;
+    padding: 5px;
+    height: 50%;
+    width: 50%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 5px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+#outer div span{
+    border: 2px solid #2f2115;
+    border-radius: 15px;
+    background-color: #e3e1e28c;
+    transition: 0.3s linear;
+}
+
+#outer div span:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px grey;
+}
+
+#button{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.but{
+    width: 85px;
+    height: 40px;
+    background-color: #d7d9ce;
+    padding: 2px;
+    border-radius: 15px;
+    border: 2px solid #2f2115;
+    color: green;
+    font-weight: bold;
+    transition: 0.3s linear;
+}
+
+.but:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px #c7cfb8;
+}
+
+/* Footer */
+
+footer{
+    /* bottom: 0px;
+    position: fixed; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: 0.5s linear;
+}
+
+footer span{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+}
+
+footer::before{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    content: "";
+    z-index: -1;
+    background-color: #c47b3a;
+    opacity: 0.9;
+}
+
+.social:hover{
+    box-shadow: 5px 5px 10px #000000;
+}
+
+footer span:hover{
+    cursor: context-menu;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Lobster&family=Roboto+Mono&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    
+</head>
+<body>
+    <header>
+        <span id="time"></span>
+        <span id="name"></span>
+    </header>
+    <section>
+        <div id="card1" class="cards">
+            <h5>SCORE BOARD</h5>            
+            <span id="total">Number Of Matches : </span>
+            <span id="user">Number Of Wins : </span>
+            <span id="loses">Number Of Loses : </span>
+            <span id="draw">Number Of Draws : </span>
+            <span>WHO IS WINS :-</span>
+            <span id="win">-</span>
+            
+        </div>
+        <div id="card2" class="cards">
+            <h5>GAME BOARD</h5>
+            <div id="outer">
+                <span id="trun">Best Of Luck</span>
+                <div id="matrix">
+                    <span id="input[0][0]" onclick="user_input(0,0)">-</span>
+                    <span id="input[0][1]" onclick="user_input(0,1)">-</span>
+                    <span id="input[0][2]" onclick="user_input(0,2)">-</span>
+                    <span id="input[1][0]" onclick="user_input(1,0)">-</span>
+                    <span id="input[1][1]" onclick="user_input(1,1)">-</span>
+                    <span id="input[1][2]" onclick="user_input(1,2)">-</span>
+                    <span id="input[2][0]" onclick="user_input(2,0)">-</span>
+                    <span id="input[2][1]" onclick="user_input(2,1)">-</span>
+                    <span id="input[2][2]" onclick="user_input(2,2)">-</span>
+                </div>
+                <div id="button">
+                    <button id="start" class="but" onclick="reset()">CONTINUE</button>
+                    <button id="reset" class="but" onclick="full_reset()">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="socialicon">
+            <a href="https://www.facebook.com/bhanujodha3466/" target="_blank"><img src="FB.png" alt="Social Media" class="social"></a>
+            <a href="https://www.instagram.com/bhanu_jodha__/" target="_blank"><img src="IG.png" alt="Social Media" class="social"></a>
+            <a href="https://www.twitter.com/Bhanu_Jodha__/" target="_blank"><img src="TW.png" alt="Social Media" class="social"></a>
+        </div>
+        <span>All rights reserved | Any illegal reproduction of this content will result in immediate legal action.<br>© 2021 Bhanu Pratap Singh Rathore
+        </span>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
