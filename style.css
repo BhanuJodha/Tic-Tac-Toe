@@ -1,39 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Roboto+Slab:wght@300&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Be Vietnam Pro', sans-serif;  
+    font-family: 'Baloo Da 2', cursive;
 }
 
 /* HEADER SECTION */
 
 header{
     width: 100%;
-    height: 30px;
-    background-color: #e39f7d;
+    height: 3.5vh;
+    background-color: #7098b8;
     display: grid;
     /* grid-template-columns: repeat(5,1fr); */
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
 }
 
 #time{
     grid-column-start: 1;
     grid-column-end: 2;
-    height: 20px;
     text-align: center;
-    padding: 3px;
-    padding-left: 6px;
     font-family: 'Roboto Mono', monospace;
+    font-size: 2.5vh;
 }
 
 #name{
     grid-column-start: 3;
     grid-column-end: 4;
-    height: 20px;
     text-align: left;
-    padding: 3px;
-    padding-left: 6px;
     font-family: 'Roboto Mono', monospace;
+    font-size: 2.5vh;
 }
 
 /* Section */
@@ -41,54 +41,54 @@ header{
 section::after{
     position: absolute;
     width: 100%;
-    height: 625px;
+    height: 85vh;
     content: "";
-    z-index: -1;
+    z-index: -2;
     background: url("background.jpg") no-repeat center center/cover;;
     opacity: 0.9;
 }
 
 section{
     width: 100%;
-    height: 625px;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .cards{
-    height: 500px;
+    height: 60vh;
     width: 30%;
-    background-color: #6f6155ed;
+    background-color: #e9a96294;
     border-radius: 15px;
     margin: 5%;
     margin-top: 2%;
 }
 
 #card1 h5{
-    font-family: 'Rubik Beastly', cursive;
+    font-family: 'Roboto Slab', serif;
     text-align: center;
-    font-size: 3rem;
-    font-weight: lighter;
+    font-size: 4vh;
+    font-weight: bolder;
     border-bottom: 5px solid blanchedalmond;
 } 
 
 #card1 span{
     display: block;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 2vh;
     padding: 2px;
-    font-family: 'Lobster', cursive;
-    font-size: xx-large;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 3.5vh;
 }
 
 
 
 #card2 h5{
-    font-family: 'Rubik Beastly', cursive;
+    font-family: 'Roboto Slab', serif;
     text-align: center;
-    font-size: 3rem;
-    font-weight: lighter;
+    font-size: 4vh;
+    font-weight: bolder;
     border-bottom: 5px solid blanchedalmond;
 } 
 
@@ -105,22 +105,22 @@ section{
     display: block;
     text-align: center;
     padding: 2px;
-    font-family: 'Lobster', cursive;
-    font-size: xx-large;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 3.5vh;
 }
 
 #matrix{
-    background-color: #c7cfb8;
+    background-color: #944b5f8a;
     display: grid;
     padding: 5px;
-    height: 50%;
+    height: 55%;
     width: 50%;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-gap: 5px;
     text-align: center;
-    font-family: 'Lobster', cursive;
-    font-size: xx-large;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 3.5vh;
     border-radius: 15px;
     margin-top: 15px;
 }
@@ -128,13 +128,13 @@ section{
 #outer div span{
     border: 2px solid #2f2115;
     border-radius: 15px;
-    background-color: #e3e1e28c;
+    background-color: #b5c5d4;
     transition: 0.3s linear;
 }
 
 #outer div span:hover{
     cursor: pointer;
-    box-shadow: 2px 3px grey;
+    box-shadow: 2px 3px #b5c5d4;
 }
 
 #button{
@@ -147,41 +147,40 @@ section{
 }
 
 .but{
-    width: 85px;
-    height: 40px;
-    background-color: #d7d9ce;
+    width: 20%;
+    height: 50%;
+    background-color: #b5c5d4;
     padding: 2px;
     border-radius: 15px;
     border: 2px solid #2f2115;
-    color: green;
+    color: black;
     font-weight: bold;
     transition: 0.3s linear;
+    font-size: 2vh;
 }
 
 .but:hover{
     cursor: pointer;
-    box-shadow: 2px 3px #c7cfb8;
+    box-shadow: 2px 3px #b5c5d4;
 }
 
 /* Footer */
 
 footer{
-    /* bottom: 0px;
-    position: fixed; */
-    height: 100px;
+    bottom: 0px;
+    position: fixed;
+    height: 12vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .social{
-    height: 40px;
-    width: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
+    height: 4vh;
+    width: 4vh;
+    margin: 1vh 1vh -1vh 1vh;
     border-radius: 10px;
     transition: 0.5s linear;
 }
@@ -189,16 +188,17 @@ footer{
 footer span{
     text-align: center;
     font-family: 'Pacifico', cursive;
-    font-size: 1rem;
+    font-size: 2vh;
+    margin-bottom: 1vh;
 }
 
 footer::before{
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 12vh;
     content: "";
     z-index: -1;
-    background-color: #c47b3a;
+    background-color: #e57966;
     opacity: 0.9;
 }
 

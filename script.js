@@ -7,12 +7,9 @@ console.log(`%cAll rights reserved | Any illegal reproduction of this content wi
 let user;
 user = prompt("Enter Your Name", "Guest");
 user = user.trim();
-if (user.lastIndexOf(" ") > 0){
-    user = user.substring(0,user.lastIndexOf(" "));
-}
 
-if (user.lastIndexOf(" ") > 17){        // Name length
-    user = user.substring(0,17);
+if (user.lastIndexOf(" ") > 12){        // Name length
+    user = user.substring(0,12);
     user = user.substring(0,user.lastIndexOf(" "));
 }     
 document.getElementById("name").innerHTML = "Hello, " + user.toUpperCase();
