@@ -8,7 +8,7 @@ let user;
 user = prompt("Enter Your Name", "Guest");
 user = user.trim();
 
-if (user.lastIndexOf(" ") > 12){        // Name length
+if (user.length > 12){        // Name length
     user = user.substring(0,12);
     user = user.substring(0,user.lastIndexOf(" "));
 }     
